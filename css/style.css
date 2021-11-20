@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("../fonts/Iosevka-Nerd-Font-Complete.ttf");
+}
+
+:root {
+    --font: "Roboto Mono";
+    --background: #0f0e17;
+    --foreground: #fffffe;
+    --color1: #e53170;
+    --color2: #f25f4c;
+    --color3: #3c434a;
+    --branch: 1px solid #a7a9be;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    /* background: var(--background); */
+    background-image: url(/Simple.png);
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.prompt {
+    font-family: var(--font);
+    color: var(--foreground);
+}
+
+.prompt~.prompt {
+    padding: 1.5rem 0 0.3125rem;
+}
+
+span {
+    color: var(--color1);
+}
+
+h1 {
+    display: inline;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--color2);
+}
+
+.tree > ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 2.5rem;
+}
+
+li {
+    position: relative;
+}
+
+li::before, li::after {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+}
+
+li::before {
+    border-top: var(--branch);
+    top: 0.75rem;
+    width: 0.5rem;
+}
+
+li::after {
+    border-left: var(--branch);
+    height: 100%;
+    top: 0.25rem;
+}
+
+li:last-child::after {
+    height: 0.5rem;
+}
+
+a {
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--foreground);
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: var(--background);
+    background: var(--color3);
+}
+
+form h1 {
+    padding-left: 0.125rem;
+}
+
+input {
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--foreground);
+    background-color: var(--background);
+    border: none;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
