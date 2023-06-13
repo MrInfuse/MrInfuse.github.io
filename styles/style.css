@@ -1,0 +1,141 @@
+/*reset styles*/
+html {
+	font-size: 16px;
+}
+article, body, div, figcaption, footer, header, h1, h2, img, 
+li, nav, p {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* body*/
+body {
+	max-width: 60%;
+	margin: 0 auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1em;
+}
+article p {
+	font-size: 1.5em;
+	line-height: 1.4em;
+	text-align: left;
+}
+/* headings */
+.sunNmoon {
+    text-align: center;
+    padding-top: 25px;
+}
+h1 {
+	color: #000000;
+	font-size: 2.3em;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	padding: 0.8em;
+}
+h2 {
+	font-size: 2em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 0.4em;
+}
+/* skip navigation */
+p.skipnavigation a{
+	position: absolute;
+	left: -10000px;
+}
+p.skipnavigation a:focus {
+	color: #34180f;
+	background-color: #D3D3D3;
+	top: 0.2em;
+	left: 0.4em;
+	z-index: 2;
+}
+/* site navigation bar */
+@media only screen and (max-width: 956px) {
+    nav.sitenavigation {
+        color: 	#000000;
+        text-align: center;
+        border-bottom: 2px solid #000000;
+     }
+     div.navigation-menu-button{
+         float: right;
+         margin-top: -6em;
+         margin-right: -12em;
+         position: relative;
+     }
+     nav.sitenavigation ul.navi {
+         border: 3px solid #34180f;
+         display: none;
+         background-color: #ffffff;
+         position: absolute;
+         right: 0;
+         z-index: 5;
+     }
+     nav.sitenavigation li.navi-list {
+        padding: 0.3em;
+        font-size: 2em;
+     }
+}
+
+@media only screen and (min-width: 957px) {
+        div.navigation-menu-button {
+        display: none;
+    }
+    nav {
+        width: 100%;
+        top: 8em;
+        border-top: 1px solid #000000;
+        border-bottom: 2px solid #000000;
+    }
+    nav ul.navi {
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    nav ul.navi li.navi-list {
+        padding: 10px;
+        font-size: 2em;
+    }
+    nav ul.navi li.navi-list a.navi-link {
+        text-decoration: none;
+        color:#000000;
+    }
+    ul.navi li.navi-list:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    #contact .navi-link{
+        color: #498AFB;
+    }
+}
+article {
+	width: 100%;
+	text-align: left;
+}
+article p {
+	padding: 0 1em 1em;
+}
+/* slider */
+#slider {
+    display: block;
+    max-width:800px;
+    max-height:601px;
+}
+.nivo-controlNav {
+    display: block;
+}
+/* footer */
+footer {
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    text-align: center;
+    font-size: medium;
+}
+.has-text-centered {
+    text-align: center!important;
+}
+.source-love {
+    color: #ff8099;
+}
